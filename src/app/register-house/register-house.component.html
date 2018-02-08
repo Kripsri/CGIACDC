@@ -1,0 +1,23 @@
+<form >
+  <div class="form-group">
+    <label for="exampleFormControlInput3">House Name</label>
+    <input type="text" class="form-control" id="exampleFormControlInput3" [(ngModel)]="model.Name" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Responsible Contact</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" [(ngModel)]="model.Contact" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput2">Winning Message</label>
+    <input type="text" class="form-control" id="exampleFormControlInput2" [(ngModel)]="model.WinningMessages" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput4">SLA (response in min)</label>
+    <input type="number" class="form-control" id="exampleFormControlInput4" [(ngModel)]="model.SLA" [ngModelOptions]="{standalone: true}">
+  </div>
+  <button class="btn btn-primary" type="submit" (click)="onRegisterHouse()"> Register </button>
+
+</form>

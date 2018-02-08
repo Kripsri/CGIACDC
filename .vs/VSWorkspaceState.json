@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\register-attack",
+    "\\src\\app\\register-house",
+    "\\src\\app\\register-threats",
+    "\\src\\assets"
+  ],
+  "SelectedNode": "\\src\\app\\register-attack\\register-attack.component.spec.ts",
+  "PreviewInSolutionExplorer": false
+}

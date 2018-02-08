@@ -1,0 +1,191 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="Kripeshwari">
+
+  <title>House of CGI</title>
+
+
+</head>
+<body id="page-top" class="index">
+<nav class="navbar navbar-default navbar-fixed-top navbar-shrink nav-header-custom" >
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a  class="navbar-brand" href="#page-top">
+      <img src="../assets/img/cgi.png" alt="Smiley face" height="42" width="200"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1" style="height: auto;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden active">
+          <a href="#page-top"></a>
+        </li>
+        <li class="page-scroll">
+          <a href="#registerHouse">Register House</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#registerThreat">Register Threat</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#registerAttack">Register Attack</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#winners">Attack History</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- Navigation -->
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <img class="img-responsive" src="../assets/img/symbols.png" alt="" data-anijs="if: scroll, on: window, do: rollIn animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated">
+        <div class="intro-text">
+          <span class="name" data-anijs="if: animationend, on:.img-responsive, do: bounce animated, after: removeAnim">House of CGI</span>
+          <!--<hr class="star-light" data-anijs="if: animationend, on:span.name, do: rotateIn animated, after: removeAnim">-->
+          <span class="skills">Guards of your kingdom</span><br>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="winners">
+  <div class="container" >
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Result of the attack</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
+        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="../assets/img/1.png" class="img-responsive" alt="" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/tq7xMoFyNhY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h2>Attack History</h2>
+            <hr class="star-primary">
+            <img src="./assets/img/1.png" class="img-responsive img-centered" alt="">
+            <p class="text-justify">
+              Thousands of years ago, there came a night that lasted a generation. Kings froze to death in their castles, same as the shepherds in their huts; and women smothered their babies rather than see them starve, and wept, and felt the tears freeze on their cheeks... In that darkness the White Walkers came for the first time. They swept through cities and kingdoms, riding their dead horses, hunting with their packs of pale spiders big as hounds.       </p>
+            <ul class="list-inline item-details">
+              <li>Winners: <strong> House of Dragons</strong>
+              </li>
+              <li>Losers: <strong>House of XXX</strong>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="success" id="registerHouse" data-anijs="if: scroll, on:window, do: rollIn animated, before: scrollReveal, after: removeAnim">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Register House</h2>
+
+      </div>
+    </div>
+    <div class="row">
+      <app-register-house></app-register-house>
+    </div>
+  </div>
+</section>
+
+
+<section id="registerThreat" data-anijs="if: scroll, on:window, do: bounceInLeft animated, before: scrollReveal, after: removeAnim">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Register Threat</h2>
+
+      </div>
+    </div>
+    <div class="row">
+      <app-register-threats></app-register-threats>
+
+    </div>
+  </div>
+</section>
+
+<!--section class=success id="registerAttack" data-anijs="if: scroll, on:window, do: bounceInLeft animated, before: scrollReveal, after: removeAnim">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Register Attack</h2>
+
+      </div>
+    </div>
+    <div class="row">
+
+    <app-register-attack></app-register-attack>
+    </div>
+  </div>
+</section-->
+
+<section class=success id="registerAttack" data-anijs="if: scroll, on:window, do: bounceInLeft animated, before: scrollReveal, after: removeAnim">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        
+        <div class="floatnone"><a href="https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/Timeline_and_Major_Events_menu.png/revision/latest?cb=20150419193128" class="image image-thumbnail"><img src="https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/Timeline_and_Major_Events_menu.png/revision/latest/scale-to-width-down/300?cb=20150419193128" alt="Timeline and Major Events menu" class="lzyPlcHld lzyTrns lzyLoaded" data-image-key="Timeline_and_Major_Events_menu.png" data-image-name="Timeline and Major Events menu.png" data-src="https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/Timeline_and_Major_Events_menu.png/revision/latest/scale-to-width-down/300?cb=20150419193128" width="300" height="19" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript>&lt;img src="https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/Timeline_and_Major_Events_menu.png/revision/latest/scale-to-width-down/300?cb=20150419193128" 	 alt="Timeline and Major Events menu"  	class="" 	 	data-image-key="Timeline_and_Major_Events_menu.png" 	data-image-name="Timeline and Major Events menu.png" 	 	 width="300"  	 height="19"  	 	 	 	&gt;</noscript></a></div>
+
+      </div>
+    </div>
+    <div class="row">
+
+    <app-dashboard></app-dashboard>
+    </div>
+  </div>
+</section>
+
+<!-- End example -->
+
+
+<script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+<script src="https://anijs.github.io/lib/anijs/dist/anijs-min.js"></script>
+<script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script>
+</body>
