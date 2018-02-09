@@ -10,6 +10,7 @@ import 'rxjs/add/operator/map';
 export class RegisterThreatService {
 
     private serverUrl = 'http://cgigot.azurewebsites.net/site/api/RegisterThread';
+    
     private headers = new Headers({'Content-Type': 'application/json'});
     constructor(
         private http: Http
@@ -24,6 +25,8 @@ return this.http.post(url, JSON.stringify(threats), {headers: this.headers})
 
 
     }
+
+    
 
 
 

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-attack-history',
   templateUrl: './attack-history.component.html',
@@ -7,9 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AttackHistoryComponent implements OnInit {
 
-  constructor() { }
+ngOnInit(){
 
-  ngOnInit() {
-  }
-
+}
 }

@@ -11,9 +11,34 @@
 
   <div class="form-group">
     <label for="exampleFormControlInput2">Winning Message</label>
-    <input type="text" class="form-control" id="exampleFormControlInput2" [(ngModel)]="model.WinningMessages" [ngModelOptions]="{standalone: true}">
+    <input type="text" class="form-control" id="exampleFormControlInput2" [(ngModel)]="modelMsg.Message" [(ngModel)]="model.WinningMessages" [ngModelOptions]="{standalone: true}">
+   
+    <button class="btn btn-primary" type="submit" (click)="GetWinMsgs()">Get Messages</button>
+   
   </div>
 
+  <div class="form-group">
+      <label for="exampleFormControlInput2">Results</label>
+    
+      <ul class="heroes">
+        <li *ngFor="let vl of results">
+            <label><strong>  
+              {{vl.name}}
+              {{vl.searchMatches[0].startTime}}
+              {{vl.searchMatches[0].text}}
+            </strong>  
+            </label>       
+     
+           
+      
+        </li>
+      </ul>   
+    </div>
+<!--div class="form-group">
+    <video width="320" height="240" controls autoplay>
+        <source src={{this.videolink}} type="video/mp4">
+      </video>
+</div-->
   <div class="form-group">
     <label for="exampleFormControlInput4">SLA (response in min)</label>
     <input type="number" class="form-control" id="exampleFormControlInput4" [(ngModel)]="model.SLA" [ngModelOptions]="{standalone: true}">

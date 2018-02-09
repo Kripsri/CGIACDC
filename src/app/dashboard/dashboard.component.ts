@@ -18,9 +18,9 @@ export class DashboardComponent  implements OnInit {
   public programs=[];
 
 
-  //constructor(http:Http,private _dashboardservice: DashboardService) { 
+  constructor(http:Http,private _dashboardservice: DashboardService) { 
 
-   /* Observable.interval(5000)
+    Observable.interval(5000)
     .switchMap(() => http.get('https://cgigot.azurewebsites.net/sonar/api/GetDistance/')).map((data) => data.json())
         .subscribe((data) => {
           this.model = data;
@@ -31,8 +31,7 @@ export class DashboardComponent  implements OnInit {
               .subscribe((cardData) => {
                 this.model1 = cardData;
                 console.log(this.model1);
-          
-  }); }*/
+  }); }
 
   ngOnInit() {
 

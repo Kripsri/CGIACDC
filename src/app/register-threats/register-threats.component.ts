@@ -11,8 +11,8 @@ export class RegisterThreatsComponent implements OnInit {
 
   threat: any;
   imagename: string;
-  model = new threat('', '', {Name: '', Value: ''});
-
+  model = new threat('', '','','',false,'',false,'');
+ 
   constructor(private _threatService: RegisterThreatService) { }
 
 
@@ -27,7 +27,5 @@ export class RegisterThreatsComponent implements OnInit {
     this._threatService.addThreat(this.model).subscribe(res => console.log(res));
 
 }
-clickIOTDeviceOption(event: EventTarget)
-{
-}
+
 }

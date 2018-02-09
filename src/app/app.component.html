@@ -39,7 +39,7 @@
           <a href="#registerAttack">Register Attack</a>
         </li>
         <li class="page-scroll">
-          <a href="#winners">Attack History</a>
+          <a href="#winners" (click)="onGetHistory()">Attack History</a>
         </li>
       </ul>
     </div>
@@ -74,7 +74,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
+      <!--div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
         <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
           <div class="caption">
             <div class="caption-content">
@@ -84,40 +84,40 @@
           <img src="../assets/img/1.png" class="img-responsive" alt="" />
         </a>
       </div>
-    </div>
-  </div>
-</section>
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/tq7xMoFyNhY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <h2>Attack History</h2>
-            <hr class="star-primary">
-            <img src="./assets/img/1.png" class="img-responsive img-centered" alt="">
-            <p class="text-justify">
-              Thousands of years ago, there came a night that lasted a generation. Kings froze to death in their castles, same as the shepherds in their huts; and women smothered their babies rather than see them starve, and wept, and felt the tears freeze on their cheeks... In that darkness the White Walkers came for the first time. They swept through cities and kingdoms, riding their dead horses, hunting with their packs of pale spiders big as hounds.       </p>
-            <ul class="list-inline item-details">
-              <li>Winners: <strong> House of Dragons</strong>
-              </li>
-              <li>Losers: <strong>House of XXX</strong>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    </div-->
+    <form>
+        <h2></h2>
+            <div class="row" style="background-color:rgb(215, 250, 218)">
+                <div class="col-md-2 block group">Time</div>
+                <div class="col-md-1 block group">Type</div>
+                <div class="col-md-2 block group">Description</div>
+                <div class="col-md-1 block group">House</div>
+                <div class="col-md-1 block group">Points</div>
+                <div class="col-md-1 block group">Stopped</div>
+                <div class="col-md-2 block group">Video</div>
+           
+              </div>
+        
+              <div class="row"></div>
+            <div style="background-color:rgb(215, 250, 218)" class="row" *ngFor="let history of histories">
+                <div class="col-md-2 block group">{{history.AttackTime}}</div>
+                <div class="col-md-1 block group">{{history.AttackType}}</div>
+                <div class="col-md-2 block group">{{history.Description}}</div>
+                <div class="col-md-1 block group">{{history.HouseAttacked}}</div>
+                <div class="col-md-1 block group">{{history.PointsWon}}</div>
+                <div class="col-md-1 block group">{{history.AttackStoped}}</div>    
+          <video width="320" height="240" autoplay>
+              <source src="{{history.URLVideo}}" type="video/mp4">
+          </video>
+              </div>
+
+    </form>
+    
 </div>
+  </div>
+
+</section>
+
 
 
 

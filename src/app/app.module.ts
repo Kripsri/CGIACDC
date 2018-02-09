@@ -12,6 +12,7 @@ import { RegisterThreatService } from './register-threats/register-threats.servi
 import { RegisterHouseService } from './register-house/register-house.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardService } from './dashboard/dashboard.service';
+import {AppService} from './app.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { DashboardService } from './dashboard/dashboard.service';
     FormsModule,
     HttpModule
   ],
-  providers: [RegisterThreatService, RegisterHouseService, DashboardService],
+  providers: [RegisterThreatService, RegisterHouseService, DashboardService, AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
